@@ -109,7 +109,7 @@ body{
     color: white;
 }
 
-.list .items{
+.list .item{
     text-align: center;
     background-color: white;
     padding: 20px;
@@ -120,16 +120,16 @@ body{
     cursor: pointer;
 }
 
-.list .items:hover{
+.list .item:hover{
     background-color: #ffc14d;
 }
 
-.list .items img{
+.list .item img{
     width: 100%;
     
 }
 
-.list .items button{
+.list .item button{
     background-color: white;
     color: orange;
     font-size: 1rem;
@@ -142,7 +142,42 @@ body{
     transition: all 0.25s ease;
 }
 
-.list .items button:hover{
+.list .item button:hover{
     background-color: #ffc14d;
     color: white;
+}
+
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: white;
+    row-gap: 10px;
+}
+
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard .count{
+    margin: 0px 10px;
+    color: black;
+}
+
+.cardName,.cardPrice{
+    color: black;
+}
+
+.cardButton{
+    width: 28px;
+    height: 28px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
